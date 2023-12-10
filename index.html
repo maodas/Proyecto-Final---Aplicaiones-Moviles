@@ -26,13 +26,15 @@
             </select>
             <button onclick="addTask()">Agregar Tarea</button>
         </div>
-        <div id="pending-task-list">
-            <h2>Pendientes</h2>
+        <div id="task-list">
+            <h2>Tareas Pendientes</h2>
             <ul id="pending-list"></ul>
-        </div>
-        <div id="completed-task-list">
-            <h2>Completadas</h2>
+            <h2>Tareas Completadas</h2>
             <ul id="completed-list"></ul>
+        </div>
+        <div id="custom-alert" style="display: none;">
+            <p id="custom-alert-content"></p>
+            <button onclick="closeCustomAlert()">Cerrar</button>
         </div>
     </div>
     <script src="script.js"></script>
