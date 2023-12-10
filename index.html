@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>To-Do List</h1>
+        <div id="tasks-summary">
+            <p>Pendientes: <span id="pending-tasks">0</span></p>
+            <p>Completadas: <span id="completed-tasks">0</span></p>
+        </div>
+        <div id="task-form">
+            <label for="title">Título:</label>
+            <input type="text" id="title" placeholder="Ingrese el título">
+            <label for="description">Descripción:</label>
+            <textarea id="description" placeholder="Ingrese la descripción"></textarea>
+            <label for="type">Tipo:</label>
+            <select id="type">
+                <option value="trabajo">Trabajo</option>
+                <option value="casa">Casa</option>
+                <option value="negocios">Negocios</option>
+            </select>
+            <button onclick="addTask()">Agregar Tarea</button>
+        </div>
+        <div id="pending-task-list">
+            <h2>Pendientes</h2>
+            <ul id="pending-list"></ul>
+        </div>
+        <div id="completed-task-list">
+            <h2>Completadas</h2>
+            <ul id="completed-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
