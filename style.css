@@ -6,7 +6,7 @@ body {
 }
 
 #app {
-    max-width: 600px;
+    max-width: 80%;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
@@ -21,6 +21,7 @@ h1 {
 
 #tasks-summary {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 label {
@@ -41,6 +42,7 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+    width: 100%; /* Hacer el botón de ancho completo */
 }
 
 ul {
@@ -61,10 +63,5 @@ li span {
 }
 
 li button {
-    margin-right: 5px;
-}
-
-#completed-task-list,
-#completed-list {
-    display: none;
+    margin-top: 5px; /* Añadir espacio entre los botones */
 }
